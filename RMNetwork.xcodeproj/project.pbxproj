@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F90A88D82096EF9B002AF6EC /* RMNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = F90A88D52096EF9A002AF6EC /* RMNetwork.m */; };
+		F90A88D92096EF9B002AF6EC /* RMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F90A88D62096EF9A002AF6EC /* RMUtil.m */; };
+		F90A88DD2096EFB6002AF6EC /* libRMNetwork-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F988BFB52096EF4B0030F965 /* libRMNetwork-lib.a */; };
 		F988BF812096EEFF0030F965 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F988BF802096EEFF0030F965 /* AppDelegate.m */; };
 		F988BF842096EEFF0030F965 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F988BF832096EEFF0030F965 /* ViewController.m */; };
 		F988BF872096EEFF0030F965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F988BF852096EEFF0030F965 /* Main.storyboard */; };
@@ -18,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F90A88DA2096EFB1002AF6EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F988BF742096EEFF0030F965 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F988BFB42096EF4B0030F965;
+			remoteInfo = "RMNetwork-lib";
+		};
 		F988BF952096EEFF0030F965 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F988BF742096EEFF0030F965 /* Project object */;
@@ -34,7 +44,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F988BFB32096EF4B0030F965 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F90A88D32096EF99002AF6EC /* RMNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMNetwork.h; sourceTree = "<group>"; };
+		F90A88D42096EF9A002AF6EC /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		F90A88D52096EF9A002AF6EC /* RMNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMNetwork.m; sourceTree = "<group>"; };
+		F90A88D62096EF9A002AF6EC /* RMUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUtil.m; sourceTree = "<group>"; };
+		F90A88D72096EF9B002AF6EC /* RMUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUtil.h; sourceTree = "<group>"; };
 		F988BF7C2096EEFF0030F965 /* RMNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F988BF7F2096EEFF0030F965 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F988BF802096EEFF0030F965 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +78,7 @@
 		F988BF9F2096EEFF0030F965 /* RMNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F988BFA32096EEFF0030F965 /* RMNetworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMNetworkUITests.m; sourceTree = "<group>"; };
 		F988BFA52096EEFF0030F965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F988BFB52096EF4B0030F965 /* libRMNetwork-lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRMNetwork-lib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90A88DD2096EFB6002AF6EC /* libRMNetwork-lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,16 +104,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F988BFB22096EF4B0030F965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F90A88DC2096EFB6002AF6EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F988BF732096EEFF0030F965 = {
 			isa = PBXGroup;
 			children = (
 				F988BF7E2096EEFF0030F965 /* RMNetwork */,
 				F988BF972096EEFF0030F965 /* RMNetworkTests */,
 				F988BFA22096EEFF0030F965 /* RMNetworkUITests */,
+				F988BFB62096EF4B0030F965 /* RMNetwork-lib */,
 				F988BF7D2096EEFF0030F965 /* Products */,
+				F90A88DC2096EFB6002AF6EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +139,7 @@
 				F988BF7C2096EEFF0030F965 /* RMNetwork.app */,
 				F988BF942096EEFF0030F965 /* RMNetworkTests.xctest */,
 				F988BF9F2096EEFF0030F965 /* RMNetworkUITests.xctest */,
+				F988BFB52096EF4B0030F965 /* libRMNetwork-lib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +178,18 @@
 			path = RMNetworkUITests;
 			sourceTree = "<group>";
 		};
+		F988BFB62096EF4B0030F965 /* RMNetwork-lib */ = {
+			isa = PBXGroup;
+			children = (
+				F90A88D42096EF9A002AF6EC /* Constant.h */,
+				F90A88D32096EF99002AF6EC /* RMNetwork.h */,
+				F90A88D52096EF9A002AF6EC /* RMNetwork.m */,
+				F90A88D72096EF9B002AF6EC /* RMUtil.h */,
+				F90A88D62096EF9A002AF6EC /* RMUtil.m */,
+			);
+			path = "RMNetwork-lib";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +204,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F90A88DB2096EFB1002AF6EC /* PBXTargetDependency */,
 			);
 			name = RMNetwork;
 			productName = RMNetwork;
@@ -188,6 +247,23 @@
 			productReference = F988BF9F2096EEFF0030F965 /* RMNetworkUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F988BFB42096EF4B0030F965 /* RMNetwork-lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F988BFBB2096EF4B0030F965 /* Build configuration list for PBXNativeTarget "RMNetwork-lib" */;
+			buildPhases = (
+				F988BFB12096EF4B0030F965 /* Sources */,
+				F988BFB22096EF4B0030F965 /* Frameworks */,
+				F988BFB32096EF4B0030F965 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RMNetwork-lib";
+			productName = "RMNetwork-lib";
+			productReference = F988BFB52096EF4B0030F965 /* libRMNetwork-lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +287,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = F988BF7B2096EEFF0030F965;
 					};
+					F988BFB42096EF4B0030F965 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = F988BF772096EEFF0030F965 /* Build configuration list for PBXProject "RMNetwork" */;
@@ -229,6 +309,7 @@
 				F988BF7B2096EEFF0030F965 /* RMNetwork */,
 				F988BF932096EEFF0030F965 /* RMNetworkTests */,
 				F988BF9E2096EEFF0030F965 /* RMNetworkUITests */,
+				F988BFB42096EF4B0030F965 /* RMNetwork-lib */,
 			);
 		};
 /* End PBXProject section */
@@ -287,9 +368,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F988BFB12096EF4B0030F965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90A88D82096EF9B002AF6EC /* RMNetwork.m in Sources */,
+				F90A88D92096EF9B002AF6EC /* RMUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F90A88DB2096EFB1002AF6EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F988BFB42096EF4B0030F965 /* RMNetwork-lib */;
+			targetProxy = F90A88DA2096EFB1002AF6EC /* PBXContainerItemProxy */;
+		};
 		F988BF962096EEFF0030F965 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F988BF7B2096EEFF0030F965 /* RMNetwork */;
@@ -506,6 +601,28 @@
 			};
 			name = Release;
 		};
+		F988BFBC2096EF4B0030F965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F988BFBD2096EF4B0030F965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,6 +658,15 @@
 			buildConfigurations = (
 				F988BFAF2096EEFF0030F965 /* Debug */,
 				F988BFB02096EEFF0030F965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F988BFBB2096EF4B0030F965 /* Build configuration list for PBXNativeTarget "RMNetwork-lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F988BFBC2096EF4B0030F965 /* Debug */,
+				F988BFBD2096EF4B0030F965 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
